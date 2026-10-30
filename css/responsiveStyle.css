@@ -1,0 +1,13 @@
+/* ==============================
+   RESPONSIVE BASE
+================================ */
+
+@media (max-width: 768px) {
+
+    :root {
+        --section-padding: 6rem;
+        --fs-3xl: 4.2rem;
+        --fs-2xl: 3.6rem;
+    }
+
+}

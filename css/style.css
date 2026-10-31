@@ -212,11 +212,57 @@ header .navbar {
     color: var(--bg-color);
 }
 
-header .navbar .nav-menu a{
+header .navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .navbar .nav-menu a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
     padding: 1rem;
     font-size: var(--fs-md);
     transition: var(--transition-normal);
 }
+
+header .navbar .nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+header .navbar .nav-Icons {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+header .navbar .nav-Icons .bx {
+    background: var(--primary-color);
+    padding: .5rem;
+    border-radius: var(--radius-sm);
+}
+
+header .navbar .nav-Icons .navCartIco {
+    position: relative;
+    margin: 0 .5rem;
+}
+
+header .navbar .nav-Icons .navCartIco span {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    background: var(--bg-color);
+    font-size: var(--fs-xs);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 header .navbar .navLogo img {
     width: 160px;
     height: auto;
@@ -224,6 +270,37 @@ header .navbar .navLogo img {
     display: block;
 }
 
+header .navbar .navMenuBar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: .5rem;
+    cursor: pointer;
+    z-index: 200;
+}
+
+header .navbar .navMenuBar div {
+    display: block;
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 23px;
+    border-radius: var(--radius-md);
+    transition: var(--transition-normal);
+}
+
+.crossMotion .navMenuBarLine1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.crossMotion .navMenuBarLine2 {
+    opacity: 0;
+}
+
+.crossMotion .navMenuBarLine3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
 /* ==============================
-   Header Ends Here
+Header Ends Here
 ================================ */

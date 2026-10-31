@@ -154,14 +154,14 @@ ul {
     justify-content: center;
     gap: 0.8rem;
 
-    padding: 1.4rem 2.8rem;
+    padding: 1.2rem 2.5rem;
 
     border: 2px solid transparent;
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-md);
 
     font-family: var(--font-heading);
     font-size: var(--fs-sm);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-regular);
 
     transition: var(--transition-normal);
 }
@@ -303,4 +303,36 @@ header .navbar .navMenuBar div {
 
 /* ==============================
 Header Ends Here
+================================ */
+/* ==============================
+Hero Section CSS Starts Here
+================================ */
+.hero{
+    min-height: 650px;
+    position: relative;
+    padding: 8rem 0px 2rem;
+}
+.hero .hero-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--dark-color);
+}
+.hero .hero-container .hero-content h1{
+    font-family: var(--font-heading);
+    font-size: var(--fs-3xl);
+    line-height: 6.8rem;
+    font-weight: 900;
+}
+.hero .hero-container .hero-content p{
+    font-size: var(--fs-md);
+    margin: 1rem;
+}
+.hero .hero-container .hero-image img{
+    max-width: 540px;
+    width: 100%;
+}
+    /* ==============================
+Hero Section CSS Ends Here
 ================================ */

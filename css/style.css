@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Righteous&display=swap');
 /* ==============================
    BUNVORA - ROOT VARIABLES
 ================================ */
@@ -24,8 +24,8 @@
     --border-color: #E7E3DC;
 
     /* Typography */
-    --font-heading: "Poppins", sans-serif;
-    --font-body: "Inter", sans-serif;
+    --font-heading: "Mitr", sans-serif;
+    --font-body: "Righteous", sans-serif;
 
     /* Font Sizes */
     --fs-xs: 1.2rem;
@@ -188,3 +188,42 @@ ul {
 }
 
 
+/* ==============================
+   Header Starts Here
+================================ */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: var(--dark-color);
+    border-bottom: 2px solid var(--primary-color);
+    z-index: 100;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+    height: 100%;
+    padding: 2.4rem 0;
+    color: var(--bg-color);
+}
+
+header .navbar .nav-menu a{
+    padding: 1rem;
+    font-size: var(--fs-md);
+    transition: var(--transition-normal);
+}
+header .navbar .navLogo img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* ==============================
+   Header Ends Here
+================================ */
